@@ -1,0 +1,12 @@
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Tic Tac Toe/bin/Debug/net6.0/Tic Tac Toe.deps.json
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Tic Tac Toe/bin/Debug/net6.0/Tic Tac Toe.dll
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Tic Tac Toe/bin/Debug/net6.0/ref/Tic Tac Toe.dll
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Tic Tac Toe/bin/Debug/net6.0/Tic Tac Toe.pdb
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Tic Tac Toe/obj/Debug/net6.0/Tic Tac Toe.csproj.AssemblyReference.cache
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Tic Tac Toe/obj/Debug/net6.0/Tic Tac Toe.GeneratedMSBuildEditorConfig.editorconfig
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Tic Tac Toe/obj/Debug/net6.0/Tic Tac Toe.AssemblyInfoInputs.cache
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Tic Tac Toe/obj/Debug/net6.0/Tic Tac Toe.AssemblyInfo.cs
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Tic Tac Toe/obj/Debug/net6.0/Tic Tac Toe.csproj.CoreCompileInputs.cache
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Tic Tac Toe/obj/Debug/net6.0/Tic Tac Toe.dll
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Tic Tac Toe/obj/Debug/net6.0/ref/Tic Tac Toe.dll
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Tic Tac Toe/obj/Debug/net6.0/Tic Tac Toe.pdb

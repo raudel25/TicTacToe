@@ -1,0 +1,18 @@
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Game/bin/Debug/net6.0/Game
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Game/bin/Debug/net6.0/Game.deps.json
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Game/bin/Debug/net6.0/Game.runtimeconfig.json
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Game/bin/Debug/net6.0/Game.dll
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Game/bin/Debug/net6.0/ref/Game.dll
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Game/bin/Debug/net6.0/Game.pdb
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Game/bin/Debug/net6.0/Tic Tac Toe.dll
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Game/bin/Debug/net6.0/Tic Tac Toe.pdb
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Game/obj/Debug/net6.0/Game.csproj.AssemblyReference.cache
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Game/obj/Debug/net6.0/Game.GeneratedMSBuildEditorConfig.editorconfig
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Game/obj/Debug/net6.0/Game.AssemblyInfoInputs.cache
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Game/obj/Debug/net6.0/Game.AssemblyInfo.cs
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Game/obj/Debug/net6.0/Game.csproj.CoreCompileInputs.cache
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Game/obj/Debug/net6.0/Game.csproj.CopyComplete
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Game/obj/Debug/net6.0/Game.dll
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Game/obj/Debug/net6.0/ref/Game.dll
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Game/obj/Debug/net6.0/Game.pdb
+/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Game/obj/Debug/net6.0/Game.genruntimeconfig.cache

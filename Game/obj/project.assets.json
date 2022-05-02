@@ -1,0 +1,88 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Tic Tac Toe/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Tic Tac Toe.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Tic Tac Toe.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Tic Tac Toe/1.0.0": {
+      "type": "project",
+      "path": "../Tic Tac Toe/Tic Tac Toe.csproj",
+      "msbuildProject": "../Tic Tac Toe/Tic Tac Toe.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Tic Tac Toe >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/raudel/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Game/Game.csproj",
+      "projectName": "Game",
+      "projectPath": "/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Game/Game.csproj",
+      "packagesPath": "/home/raudel/.nuget/packages/",
+      "outputPath": "/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Game/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/raudel/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Tic Tac Toe/Tic Tac Toe.csproj": {
+              "projectPath": "/media/raudel/Work/Estudio/Codes/C#/Tic Tac Toe/Tic Tac Toe/Tic Tac Toe.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/opt/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
