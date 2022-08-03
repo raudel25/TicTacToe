@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\Tic Tac Toe\Tic Tac Toe.csproj" />
+    <ProjectReference Include="..\TicTacToe\TicTacToe.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

@@ -1,24 +1,27 @@
 ﻿namespace TicTacToe;
+
 public static class Rules
 {
     public enum State
     {
-        win,
-        continueGame,
-        endGame,
+        Win,
+        ContinueGame,
+        EndGame,
     }
+
     public static State GameState(string[,] board)
     {
         State game = Rows(board);
-        if (game != State.continueGame) return game;
+        if (game != State.ContinueGame) return game;
         game = Columns(board);
-        if (game != State.continueGame) return game;
+        if (game != State.ContinueGame) return game;
         game = End(board);
-        if (game != State.continueGame) return game;
+        if (game != State.ContinueGame) return game;
         game = Diagonal(board);
-        if (game != State.continueGame) return game;
-        return State.continueGame;
+        if (game != State.ContinueGame) return game;
+        return State.ContinueGame;
     }
+
     private static State Rows(string[,] board)
     {
         for (int i = 0; i < board.GetLength(0); i++)
@@ -29,10 +32,13 @@ public static class Rules
             {
                 if (board[i, 0] != board[i, j]) win = false;
             }
-            if (win) return State.win;
+
+            if (win) return State.Win;
         }
-        return State.continueGame;
+
+        return State.ContinueGame;
     }
+
     private static State Columns(string[,] board)
     {
         for (int i = 0; i < board.GetLength(1); i++)
@@ -43,21 +49,26 @@ public static class Rules
             {
                 if (board[0, i] != board[j, i]) win = false;
             }
-            if (win) return State.win;
+
+            if (win) return State.Win;
         }
-        return State.continueGame;
+
+        return State.ContinueGame;
     }
+
     private static State End(string[,] board)
     {
         for (int i = 0; i < board.GetLength(0); i++)
         {
             for (int j = 0; j < board.GetLength(1); j++)
             {
-                if (board[i, j] == " ") return State.continueGame;
+                if (board[i, j] == " ") return State.ContinueGame;
             }
         }
-        return State.endGame;
+
+        return State.EndGame;
     }
+
     private static State Diagonal(string[,] board)
     {
         bool winLeft = (board[0, 0] != " ");
@@ -67,7 +78,8 @@ public static class Rules
             if (board[0, 0] != board[i, i]) winLeft = false;
             if (board[0, board.GetLength(1) - 1] != board[i, board.GetLength(1) - 1 - i]) winRight = false;
         }
-        if (winLeft || winRight) return State.win;
-        return State.continueGame;
+
+        if (winLeft || winRight) return State.Win;
+        return State.ContinueGame;
     }
 }
