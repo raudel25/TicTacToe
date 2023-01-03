@@ -14,13 +14,19 @@ for (int i = 0; i < 3; i++)
 int difficulty = aux.Item2;
 string player = aux.Item1;
 
-if (player == "X") Gamer.ComputerGamer(board, player, difficulty);
-PrintBoard(board);
+bool computerWin = false;
+
+if (player == "X")
+{
+    (var play,computerWin) = Gamer.ComputerGamer(board, player, difficulty);
+    board[play.Item1, play.Item2] = player == "X" ? "X" : "Y";
+}
+PrintBoard(board,computerWin);
 
 while (true)
 {
     PlayerUser(player, board);
-    PrintBoard(board);
+    PrintBoard(board,computerWin);
 
     Rules.State state = Rules.GameState(board);
     if (state == Rules.State.Win)
@@ -35,9 +41,9 @@ while (true)
         break;
     }
 
-    (var play,bool computerWin) = Gamer.ComputerGamer(board, player, difficulty);
+    (var play,computerWin) = Gamer.ComputerGamer(board, player, difficulty);
     board[play.Item1, play.Item2] = player == "X" ? "X" : "Y";
-    PrintBoard(board);
+    PrintBoard(board,computerWin);
 
     state = Rules.GameState(board);
     if (state == Rules.State.Win)
@@ -111,9 +117,12 @@ static bool Wrong(string[] s, string[,] board, ref int row, ref int column)
     return true;
 }
 
-static void PrintBoard(string[,] board)
+static void PrintBoard(string[,] board,bool computerWin)
 {
     Console.Clear();
+    
+    if(computerWin) Console.WriteLine("Vas a perder...\n");
+    
     for (int i = 0; i < board.GetLength(0); i++)
     {
         for (int j = 0; j < board.GetLength(1); j++)

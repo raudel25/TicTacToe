@@ -1,2 +1,2 @@
 run:
-	dotnet run --project Game/
+	dotnet run --project GameUI

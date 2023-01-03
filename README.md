@@ -3,7 +3,7 @@ Implementación del tic tac toe, basada en el algoritmo __MinMax__, consta de 3 
 
 ## Ejecución del programa
 
-El juego se ejecuta mediante una aplicación de consola llamada ``Game``.
+El juego se ejecuta mediante una aplicación de escritorio de <a href="https://avaloniaui.net/">Avalonia</a> llamada ``GameUI``.
 
 Para ejecutarla debe escribir en la consola:
 ```bash
@@ -12,7 +12,7 @@ Para ejecutarla debe escribir en la consola:
 para linux y
 
 ```bash
-    dotnet run --project Tester
+    dotnet run --project GamerUI
 ```
 
 para windows.
