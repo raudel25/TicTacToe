@@ -2,7 +2,7 @@ namespace TicTacToe;
 
 public static class Gamer
 {
-    public static (int,int) ComputerGamer(string[,] board, string player, int difficulty)
+    public static ((int, int), bool) ComputerGamer(string[,] board, string player, int difficulty)
     {
         List<(int, int)> randomPlays = new List<(int, int)>();
         List<(int, int)> plays = new List<(int, int)>();
@@ -24,18 +24,20 @@ public static class Gamer
             }
         }
 
-        return Play(board, randomPlays, plays, player, difficulty);
+        return Play(board, randomPlays, plays, player, difficulty,
+            (player == "X" && minmax == 1) || (player == "Y" && minmax == -1));
     }
 
-    private static (int, int) Play(string[,] board, List<(int, int)> randomPLay, List<(int, int)> plays, string player,
-        int difficulty)
+    private static ((int, int), bool) Play(string[,] board, List<(int, int)> randomPLay, List<(int, int)> plays,
+        string player,
+        int difficulty, bool computerWin)
     {
         Random rnd = new Random();
 
-        if (difficulty == 1) return plays[rnd.Next(plays.Count)];
-        if (difficulty == 2) return IntelligentPlay(board, plays, player);
+        if (difficulty == 1) return (plays[rnd.Next(plays.Count)], computerWin);
+        if (difficulty == 2) return (IntelligentPlay(board, plays, player), computerWin);
 
-        return randomPLay[rnd.Next(randomPLay.Count)];
+        return (randomPLay[rnd.Next(randomPLay.Count)], false);
     }
 
     private static (int, int) IntelligentPlay(string[,] board, List<(int, int)> plays, string player)
@@ -129,7 +131,7 @@ public static class Gamer
 
     private static void TypeGamer(string[,] board, string player, List<(int, int)> plays, ref int minmax, int i, int j)
     {
-        int aux = 0;
+        int aux;
         if (player == "Y")
         {
             aux = GamerX(board);

@@ -35,7 +35,7 @@ while (true)
         break;
     }
 
-    var play = Gamer.ComputerGamer(board, player, difficulty);
+    (var play,bool computerWin) = Gamer.ComputerGamer(board, player, difficulty);
     board[play.Item1, play.Item2] = player == "X" ? "X" : "Y";
     PrintBoard(board);
 
