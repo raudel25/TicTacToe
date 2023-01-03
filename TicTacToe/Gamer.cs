@@ -2,7 +2,7 @@ namespace TicTacToe;
 
 public static class Gamer
 {
-    public static void ComputerGamer(string[,] board, string player, int difficulty)
+    public static (int,int) ComputerGamer(string[,] board, string player, int difficulty)
     {
         List<(int, int)> randomPlays = new List<(int, int)>();
         List<(int, int)> plays = new List<(int, int)>();
@@ -24,8 +24,7 @@ public static class Gamer
             }
         }
 
-        (int, int) play = Play(board, randomPlays, plays, player, difficulty);
-        board[play.Item1, play.Item2] = player;
+        return Play(board, randomPlays, plays, player, difficulty);
     }
 
     private static (int, int) Play(string[,] board, List<(int, int)> randomPLay, List<(int, int)> plays, string player,

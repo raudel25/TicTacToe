@@ -29,7 +29,14 @@ while (true)
         break;
     }
 
-    Gamer.ComputerGamer(board, player, difficulty);
+    if (state == Rules.State.EndGame)
+    {
+        Console.WriteLine("Fin del juego");
+        break;
+    }
+
+    var play = Gamer.ComputerGamer(board, player, difficulty);
+    board[play.Item1, play.Item2] = player == "X" ? "X" : "Y";
     PrintBoard(board);
 
     state = Rules.GameState(board);
@@ -96,6 +103,7 @@ static (string, int) Players()
 
 static bool Wrong(string[] s, string[,] board, ref int row, ref int column)
 {
+    if (s.Length != 2) return false;
     if (!int.TryParse(s[0], out row) || !int.TryParse(s[1], out column)) return false;
     if (row < 0 || column < 0) return false;
     if (row >= board.GetLength(0) || column >= board.GetLength(1)) return false;
@@ -105,7 +113,7 @@ static bool Wrong(string[] s, string[,] board, ref int row, ref int column)
 
 static void PrintBoard(string[,] board)
 {
-    // Console.Clear();
+    Console.Clear();
     for (int i = 0; i < board.GetLength(0); i++)
     {
         for (int j = 0; j < board.GetLength(1); j++)
