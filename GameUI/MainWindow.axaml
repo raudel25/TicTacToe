@@ -1,0 +1,85 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="GameUI.MainWindow"
+        Title="TicTacToe">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Name="Menu">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+                Tic Tac Toe
+            </TextBlock>
+
+            <Grid Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="160"></ColumnDefinition>
+                    <ColumnDefinition Width="160"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Click="PlayerX" HorizontalAlignment="Center" Height="35" FontSize="16">Jugar con X</Button>
+                <Button Grid.Column="1" Click="PlayerY" HorizontalAlignment="Center" Height="35" FontSize="16">Jugar con Y</Button>
+            </Grid>
+
+            <Grid Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"></ColumnDefinition>
+                    <ColumnDefinition Width="80"></ColumnDefinition>
+                    <ColumnDefinition Width="80"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <RadioButton Grid.Column="0" HorizontalAlignment="Center" IsChecked="True" Name="Izi" GroupName="Level"
+                             Content="Fácil" >
+                </RadioButton>
+                <RadioButton Grid.Column="1" HorizontalAlignment="Center" IsChecked="False" Name="Medium" GroupName="Level"
+                             Content="Medio">
+                </RadioButton>
+                <RadioButton Grid.Column="2" HorizontalAlignment="Center" IsChecked="False" Name="Hard" GroupName="Level"
+                             Content="Díficil">
+                </RadioButton>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="1" IsVisible="False" Name="Game">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="400"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Name="Board" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"></RowDefinition>
+                    <RowDefinition Height="100"></RowDefinition>
+                    <RowDefinition Height="100"></RowDefinition>
+                </Grid.RowDefinitions>
+            </Grid>
+
+            <Grid Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="250"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" Name="GameState" FontSize="16" VerticalAlignment="Center"></TextBlock>
+                <Button Grid.Column="1" Click="NewGame">Nuevo Juego</Button>
+            </Grid>
+
+        </Grid>
+    </Grid>
+</Window>
