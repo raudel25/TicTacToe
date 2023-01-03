@@ -15,9 +15,9 @@ public static class Rules
         if (game != State.ContinueGame) return game;
         game = Columns(board);
         if (game != State.ContinueGame) return game;
-        game = End(board);
-        if (game != State.ContinueGame) return game;
         game = Diagonal(board);
+        if (game != State.ContinueGame) return game;
+        game = End(board);
         if (game != State.ContinueGame) return game;
         return State.ContinueGame;
     }
